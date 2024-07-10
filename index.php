@@ -20,7 +20,21 @@ if($temp <20){
 } else echo " We are in summer!";
 ?>
 
+<br>
+Task 3 :
+<br>
+<?php
 
+
+function sum($n1,$n2){
+    if(($n1==$n2) ){
+        echo "The sumation of $n1 & $n2 = ". ($n1+$n2);
+    }else {
+        echo "The sumation of $n1 & $n2 = ". ($n1+$n2) ; 
+    } 
+}
+sum(2,2);
+?>
 
 
 <br>
@@ -238,6 +252,19 @@ echo $last3Charts;
 
 
 ?>
+<br>
+Task 7 :
+<br>
+<?php 
+function password_generate($chars) 
+{
+  $data = '1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcefghijklmnopqrstuvwxyz';
+  return substr(str_shuffle($data), 0, $chars);
+}
+$data = '1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcefghijklmnopqrstuvwxyz';
+echo $data . "\n" ."<br>";
+echo password_generate(20)."\n"."<br>";
+?>
  <br>
 task 8 :  
 <br>
@@ -271,7 +298,16 @@ $word1 = "dragonball";
 $word2 = "dragonboll";
 echo "Difference: " . findDifference($word1, $word2);
 ?>
-
+<br>
+Task 10 : 
+<br>
+<?php
+$s = 'Twinkle twinkle, little star.';
+$a = explode(' ',$s);
+echo var_dump($a);
+echo "<br>";
+echo "<br>";
+?>
 
 <br>
 task 11 : 
@@ -378,6 +414,13 @@ echo $trimmed_str;
 <br>
 Task 16:
 <br>
+<?php
+$num = '"\1+2/32:2-3/43';
+echo preg_replace("/[^0-9]/",' ',$num);
+echo "<br>";
+echo "<br>";
+
+?>
 
 <?php
 
